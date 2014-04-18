@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gists</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- //CSS// --><!-- \\CSS\\ -->
+		<!-- //JS// --><!-- \\JS\\ -->
+	</head>
+	<body>
+		<div id='alert' class='view'></div>
+		<div id='login' class='view'>
+			<div class='center'>
+			</div>
+			<div class='offset'>
+				<input type='text' id='username'></input>
+				<input type='password' id='password'></input>
+				<button type='button' id='butlogin' onclick='app.login()'>Login</button>
+				<button type='button' onclick='app.router.redirect("/articles", true)'>Abbrechen</button>
+			</div>
+		</div>
+		<div id='list' class='view'>
+			<h1>Entries</h1>
+			<ul>
+			</ul>
+		</div>
+		<div id='article' class='view'>
+			<div class='column'>
+				<input type='text' id='title'></input>
+				<textarea id='markdown'></textarea>
+			</div>
+			<div class='column'>
+				<div id='result' class='markdown'>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,186 @@
+html {
+	font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-size: 100%;
+	margin: 0px;
+}
+
+body {
+	margin: 0px;
+}
+
+.view {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition: opacity 500ms;
+	visibility: hidden;
+}
+
+.view.visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+#alert {
+	z-index: 2;
+	left: 50%;
+	width: 300px;
+	margin-left: -161px;
+	margin-top: 15px;
+	padding: 10px;
+	background: #F2FBFF;
+	height: auto;
+	border-radius: 5px;
+	border: 1px solid #C4CBCF;
+	box-shadow: 0px 2px 10px rgba(196, 203, 207, 0.5);
+}
+
+#edit {
+	display: inline-block;
+	margin-left: 10px;
+	width: 10px;
+	height: 10px;
+	padding: 5px;
+	opacity: 0.4;
+	cursor: pointer;
+	transition: opacity 200ms;
+}
+
+#edit:hover {
+	opacity: 0.8;
+}
+
+#list h1 {
+	height: 80px;
+	vertical-align: middle;
+	line-height: 100px;
+	font-weight: normal;
+	max-width: 700px;
+	margin: auto;
+}
+
+#list ul {
+	max-width: 42em;
+	margin: auto;
+	padding: 0;
+	list-style-type: none;
+}
+
+#list li {
+	padding: 0px 10px;
+	margin-top: 10px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	vertical-align: middle;
+	border-bottom: 1px dotted #D1D1D1;
+	transition: padding 250ms, background 250ms, color 250ms;
+}
+
+#list li.add {
+	text-align: center;
+}
+
+#list a {
+	text-decoration: none;
+	color: black;
+}
+
+#list li:hover {
+	color: #00729E;
+	background: #F2FBFF;
+	padding: 0px 15px;
+}
+
+#article>.column {
+	position: absolute;
+	height: 100%;
+	overflow: auto;
+	transition: width 750ms, opacity 750ms, left 750ms;
+}
+
+#article.edit>.column:first-child {
+	left: 0;
+	opacity: 1;
+}
+
+#article.edit>.column:last-child {
+	left: 50%;
+	width: 50%;
+}
+
+#article>.column:first-child {
+	width: 50%;
+	opacity: 0;
+}
+
+#article>.column:last-child {
+	width: 100%;
+	left: 0;
+}
+
+#title {
+	z-index: 1;
+	width: 100%;
+	margin-left: -1px;
+	position: relative;
+	font-size: 30px;
+	border: 0px;
+	border-bottom: 1px dotted #111;
+	border-right: 1px dotted #111;
+	outline: 0px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 0px;
+}
+
+#markdown {
+	margin: 0px;
+	position: absolute;
+	width: 100%;
+	border: 0px;
+	top: 60px;
+	bottom: 0px;
+	resize: none;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: 0px;
+	border-right: 1px dotted #111;
+}
+
+.center {
+	height: 50%;
+}
+
+.offset {
+	margin-top: -57.5px;
+	height: 115px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.offset input {
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 5px;
+	width: 190px;
+	margin: 5px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.offset button {
+	outline: none;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin: 5px;
+	padding: 5px;
+	width: 90px;
+	float: left;
+	box-sizing: border-box;
+	cursor: pointer;
+}

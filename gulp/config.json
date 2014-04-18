@@ -1,0 +1,45 @@
+{
+	"destination": ".tmp/public",
+	
+	"tasks": {
+		"assets": {
+			"src": [
+				"assets/other/**/*"
+			],
+			"base": "assets"
+		},
+		"sprites": [
+			"assets/images/**/*"
+		],
+		"scripts": {
+			"src": [
+				"assets/js/framework/events.js",
+				"assets/js/framework/**/*.js",
+				"assets/js/**/*.js"
+			],
+			"base": "assets"
+		},
+		"styles": {
+			"src": [
+				"assets/styles/**/*.css"
+			],
+			"base": "assets"
+		},
+		"templates": {
+			"src": [
+				"assets/templates/**/*.+(hbs|handlebars)"
+			],
+			"dest": "templates"
+		},
+		"modules": {
+			"src": [
+			],
+			"dest": "modules"
+		}
+	},
+
+	"views": {
+		"src": "views-in/**/*",
+		"dest": "views"
+	}
+}
