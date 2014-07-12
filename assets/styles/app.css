@@ -104,7 +104,7 @@ body {
 
 #article.edit>.column:first-child {
 	left: 0;
-	opacity: 1;
+	width: 50%;
 }
 
 #article.edit>.column:last-child {
@@ -113,8 +113,9 @@ body {
 }
 
 #article>.column:first-child {
-	width: 50%;
-	opacity: 0;
+	width: 0px;
+	background-color: #f6f6f6;
+	border-right: 1px solid #ccc;
 }
 
 #article>.column:last-child {
@@ -129,12 +130,11 @@ body {
 	position: relative;
 	font-size: 30px;
 	border: 0px;
-	border-bottom: 1px dotted #111;
-	border-right: 1px dotted #111;
 	outline: 0px;
 	box-sizing: border-box;
 	padding: 10px;
 	margin: 0px;
+	background-color: transparent;
 }
 
 #markdown {
@@ -148,7 +148,7 @@ body {
 	padding: 10px;
 	box-sizing: border-box;
 	outline: 0px;
-	border-right: 1px dotted #111;
+	background-color: transparent;
 }
 
 .center {
