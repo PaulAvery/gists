@@ -1,3 +1,4 @@
 module.exports.models = {
-	connection: 'default'
+	connection: 'default',
+	migrate: 'safe'
 };
